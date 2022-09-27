@@ -13,3 +13,18 @@ function showRating(rating){
     return ratings
 }
 console.log(showRating(3.5))
+
+
+function sortLowToHigh(array){
+    return array.sort((a,b) => a - b)
+}
+console.log(sortLowToHigh([1,5,0,10,23]))
+
+function sortHighToLow(array){
+    return array.sort((a, b) => b.price - a.price)
+}
+console.log(sortHighToLow([
+    {id: 1, price: 50},
+    {id: 2, price: 210},
+    {id: 3, price: 500}]
+    ))
